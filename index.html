@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/portfolio-goit-project-js-101/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio jefferson*</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/portfolio-goit-project-js-101/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/portfolio-goit-project-js-101/assets/vendor-6ddb0015.js">
+    <link rel="stylesheet" href="/portfolio-goit-project-js-101/assets/vendor-0e736569.css">
+    <link rel="stylesheet" href="/portfolio-goit-project-js-101/assets/index-964e5a01.css">
+  </head>
+  <body>
+    <header class="PageHeader">
+  <div class="HeaderWrapper">
+    <a href="./index.html" class="HeaderLogo">
+      <img class="HeaderLogoImage" srcset="/portfolio-goit-project-js-101/assets/logo@2x-0bcef3d8.png 2x" src="/portfolio-goit-project-js-101/assets/logo-1ea26237.png" alt="dev" width="80"
+        height="80" />
+      <p class="HeaderLogoText">jefferson*</p>
+    </a>
+    <nav class="HeaderNavigation">
+      <button class="HeaderMenuButton" type="button">Menu</button>
+      <ul class="HeaderMenuList">
+        <li class="HeaderMenuItem">
+          <a href="#about-me" class="HeaderMenuLink"> About me </a>
+        </li>
+        <li class="HeaderMenuItem">
+          <a href="#Benefits" class="HeaderMenuLink"> Benefits </a>
+        </li>
+        <li class="HeaderMenuItem">
+          <a href="#projects" class="HeaderMenuLink"> Projects </a>
+        </li>
+        <li class="HeaderMenuItem">
+          <a href="#FAQ" class="HeaderMenuLink"> FAQ </a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#WorkTogether" class="HeaderOrderLink"> Order the project </a>
+    <button id="openModal" class="HeaderBurgerButton" type="button">
+      <svg class="HeaderBurgerVector" width="28" height="28">
+        <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-menu-burger"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- <header class="page-header">
+  <div class="header-wrapper">
+    <a href="./index.html" class="header-logo">
+      <img
+        class="header-logo-image"
+        srcset="./img/logo/logo@2x.png 2x"
+        src="./img/logo/logo.png"
+        alt="dev"
+        width="80"
+        height="80"
+      />
+      <p class="header-logo-text">jefferson*</p>
+    </a>
+    <nav class="header-navigation">
+      <button class="header-menu-button" type="button">Menu</button>
+      <ul class="header-menu-list">
+        <li class="header-menu-list-item">
+          <a href="#AboutMe" class="header-menu-link"> About me </a>
+        </li>
+        <li class="header-menu-list-item">
+          <a href="#Benefits" class="header-menu-link"> Benefits </a>
+        </li>
+        <li class="header-menu-list-item">
+          <a href="#Projects" class="header-menu-link"> Projects </a>
+        </li>
+        <li class="header-menu-list-item">
+          <a href="#FAQ" class="header-menu-link"> FAQ </a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#WorkTogether" class="header-order-link"> Order the project </a>
+    <button id="openModal" class="header-burger-button" type="button">
+      <svg class="header-burger-vector" width="28" height="28">
+        <use href="img/icons.svg#icon-menu-burger"></use>
+      </svg>
+    </button>
+  </div>
+</header> -->
+    <main>
+      <section class="HeroSection">
+    <div class="HeroWrapper Container">
+        <h1 class="HeroHeaderOne">
+            hello.<br />i’m fullstack developer<br />lloyd jefferson.
+        </h1>
+        <ul class="HeroSocialsList">
+            <li class="HeroSocialsListItem">
+                <a href="https://www.instagram.com/goitclub/" class="HeroSocialsLinks" target="_blank">IG</a>
+            </li>
+            <li class="HeroSocialsListItem">
+                <a href="https://www.facebook.com/goITclub/" class="HeroSocialsLinks" target="_blank">FB</a>
+            </li>
+            <li class="HeroSocialsListItem">
+                <a href="https://www.youtube.com/c/GoIT/" class="HeroSocialsLinks" target="_blank">YT</a>
+            </li>
+            <li class="HeroSocialsListItem">
+                <a href="https://github.com/AlexSerg01/portfolio-goit-project/" class="HeroSocialsLinks"
+                    target="_blank">GH</a>
+            </li>
+            <li class="HeroSocialsListItem">
+                <a href="mailto:lloydjefferson@gmail.com"
+                    class="HeroSocialsLinks HeroEmail">lloydjefferson@gmail.com</a>
+            </li>
+        </ul>
+    </div>
+</section>
+      <section class="about-me-section" id="about-me">
+  <div class="Container">
+    <div class="about-me-container-section">
+      <h2 class="section-caption visually-hidden">Abouts me</h2>
+      <div class="about-me-description-and-photo-wrapper">
+        <div class="about-me-description">
+          <div class="about-me-description-wrapper">
+            <p class="about-me-description-text">
+              I work with people all over the world to create impressive and
+              <span class="accent-red">functional</span>
+              <span class="accent-color">websites</span> that reflect each
+              client's unique personality.
+            </p>
+          </div>
+        </div>
+        <div class="tumb-picture">
+          <picture class="about-me-picture">
+            <source
+              srcset="/portfolio-goit-project-js-101/assets/portrait-desktop-beb182a0.jpg 1x, /portfolio-goit-project-js-101/assets/portrait-desktop@2x-75d5c06e.jpg 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/portfolio-goit-project-js-101/assets/portrait-tablet-98081a6e.jpg 1x, /portfolio-goit-project-js-101/assets/portrait-tablet@2x-435d5e7d.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/portfolio-goit-project-js-101/assets/portrait-mobile-dcb7a581.jpg 1x, /portfolio-goit-project-js-101/assets/portrait-mobile@2x-69ba2018.jpg 2x"
+              media="(min-width: 375px)"
+            />
+            <img
+              src="/portfolio-goit-project-js-101/assets/portrait-desktop-beb182a0.jpg"
+              alt="Photo developer"
+              width="680"
+              height="700"
+            />
+          </picture>
+        </div>
+      </div>
+      <ul class="list-about accordion-container">
+        <li class="ac title">
+          <div class="about-me-item-caption-and-button-wrapper">
+            <h3 class="title-about ac-header">About me</h3>
+            <button class="ac-trigger about-button">
+              <svg class="icon-about-me">
+                <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="ac-panel panel-about">
+            <div class="about-me-accordion-text-wrapper">
+              <p class="ac-text text-about">
+                I am Lloyd Jefferson, a talented programmer with extensive
+                expertise in software development. I have an understanding of
+                different programming languages and technologies, always ready
+                to improve my skills. I always follow the latest trends and look
+                for unconventional, creative solutions to problems. I have a
+                high level of analytical skills and am able to effectively solve
+                even the most difficult tasks encountered on the way.
+              </p>
+              <p class="ac-text text-about">
+                Able to work both independently and in a team. I can effectively
+                cooperate with colleagues, exchanging ideas and finding optimal
+                solutions. Professional maturity allows you to calmly cope with
+                challenges and stressful situations, while maintaining a high
+                quality of work.I am always looking for opportunities for
+                self-improvement. I actively study new technologies and
+                practices to stay abreast of the latest innovations. I have a
+                strong understanding of various programming languages,
+                frameworks and architectural concepts that allow me to create
+                efficient and scalable software.
+              </p>
+            </div>
+          </div>
+          <div class="line-between-accordion-item"></div>
+        </li>
+        <li class="ac title">
+          <div class="about-me-item-caption-and-button-wrapper">
+            <h3 class="title-about ac-header">Role</h3>
+            <button class="ac-trigger about-button">
+              <svg class="icon-about-me">
+                <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="ac-panel panel-about">
+            <ul class="about-me-accordion-pannel-list">
+              <li class="about-me-accordion-pannel-item">
+                <p class="ac-text text-about">Frontend development</p>
+              </li>
+              <li class="about-me-accordion-pannel-item">
+                <p class="ac-text text-about">HeadlessCMS,Wordpress</p>
+              </li>
+              <li class="about-me-accordion-pannel-item">
+                <p class="ac-text text-about">Blender(enjoy)</p>
+              </li>
+            </ul>
+          </div>
+          <div class="line-between-accordion-item"></div>
+        </li>
+        <li class="ac title">
+          <div class="about-me-item-caption-and-button-wrapper">
+            <h3 class="title-about ac-header">Education</h3>
+            <button class="ac-trigger about-button">
+              <svg class="icon-about-me">
+                <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="ac-panel panel-about">
+            <ul class="about-me-accordion-pannel-list">
+              <li class="about-me-accordion-pannel-item">
+                <p class="ac-text text-about">
+                  2018 - 2019 / Frontend Development Diploma, GoIT IT School,
+                  New York
+                </p>
+              </li>
+              <li class="about-me-accordion-pannel-item">
+                <p class="ac-text text-about">
+                  2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+                  School, New York
+                </p>
+              </li>
+              <li class="about-me-accordion-pannel-item">
+                <p class="ac-text text-about">
+                  2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="line-between-accordion-item"></div>
+        </li>
+      </ul>
+      <div class="swipper-and-button-wraper">
+        <div class="swiper about-swiper-container">
+          <ul class="swiper-wrapper swiper-list">
+            <li class="swiper-slide swiper-slide-caston">
+              <div class="swiper-slide-item">
+                <p class="swiper-slide-item-text">HTML/CSS</p>
+              </div>
+            </li>
+            <li class="swiper-slide swiper-slide-caston">
+              <div class="swiper-slide-item">
+                <p class="swiper-slide-item-text">JavaScript</p>
+              </div>
+            </li>
+            <li class="swiper-slide swiper-slide-caston">
+              <div class="swiper-slide-item">
+                <p class="swiper-slide-item-text">React</p>
+              </div>
+            </li>
+            <li class="swiper-slide swiper-slide-caston">
+              <div class="swiper-slide-item">
+                <p class="swiper-slide-item-text">Node.js</p>
+              </div>
+            </li>
+            <li class="swiper-slide swiper-slide-caston">
+              <div class="swiper-slide-item">
+                <p class="swiper-slide-item-text">React Native</p>
+              </div>
+            </li>
+            <li class="swiper-slide swiper-slide-caston">
+              <div class="swiper-slide-item">
+                <p class="swiper-slide-item-text">Soft skills</p>
+              </div>
+            </li>
+            <!-- 000 -->
+            <li class="swiper-slide swiper-slide-caston">
+              <div class="swiper-slide-item">
+                <p class="swiper-slide-item-text">Soft skills</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-btn-next about-swiper-button">
+          <svg class="icon-next-button" width="40" height="40">
+            <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="benefits" id="Benefits">
+  <h2 class="benefitsTiyle">Benefits of working with me</h2>
+  <div class="benefitsBlokList">
+    <ul class="benefitsUl">
+      <li class="benefitsItems">
+        <svg class="benefitsIcon" width="24" height="24">
+          <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-user"></use>
+        </svg>
+        <h3 class="benefitsItemsTitle">Expertise</h3>
+        <p class="benefitsText">
+          As a highly experienced developer, I have deep knowledge of
+          programming and website development.
+        </p>
+      </li>
+      <li class="benefitsItems">
+        <svg class="benefitsIcon" width="24" height="24">
+          <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-message-chat"></use>
+        </svg>
+        <h3 class="benefitsItemsTitle">Communication</h3>
+        <p class="benefitsText">
+          Understanding your needs and wants is my priority and I am always open
+          to discussions and corrections.
+        </p>
+      </li>
+      <li class="benefitsItems">
+        <svg class="benefitsIcon" width="24" height="24">
+          <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-brush"></use>
+        </svg>
+        <h3 class="benefitsItemsTitle">Art</h3>
+        <p class="benefitsText">
+          Thanks to my creative nature, I am ready to accept challenges and help
+          you bring your ideas to life.
+        </p>
+      </li>
+      <li class="benefitsItems">
+        <svg class="benefitsIcon" width="24" height="24">
+          <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-hourglass"></use>
+        </svg>
+        <h3 class="benefitsItemsTitle">Urgent execution</h3>
+        <p class="benefitsText">
+          I understand how important time is to you. Ready to work quickly and
+          efficiently, without reducing the quality of work.
+        </p>
+      </li>
+    </ul>
+    <a href="#WorkTogether" class="orderLink">Order the project</a>
+  </div>
+</section>
+
+      <section id="projects" class="Section SectionProject">
+  <div class="Container">
+    <h3 class="TitleProject">Projects</h3>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- ------- Slide 1 ------ -->
+        <div class="swiper-slide">
+          <div class="DiscriptProject">
+            <ul class="TechnologiesListProject">
+              <li>
+                <p class="TechnologiesText">#react</p>
+              </li>
+              <li>
+                <p class="TechnologiesText">#js</p>
+              </li>
+              <li>
+                <p class="TechnologiesText">#node js</p>
+              </li>
+              <li>
+                <p class="TechnologiesText">#git</p>
+              </li>
+            </ul>
+            <h2 class="ProjectName">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h2>
+            <a class="LinkGithubProject" href="https://github.com/AlexSerg01/portfolio-goit-project" target="_blank">See
+              project</a>
+          </div>
+          <div class="ProjectPictureContainer">
+            <picture>
+              <source srcset="/portfolio-goit-project-js-101/assets/project-img-1-desk-tab-baa4ecee.jpg 1x, /portfolio-goit-project-js-101/assets/project-img-1-desk-tab@2x-51ff9956.jpg 2x" media="(min-width: 1440px)" />
+              <source srcset="/portfolio-goit-project-js-101/assets/project-img-1-desk-tab-baa4ecee.jpg 1x, /portfolio-goit-project-js-101/assets/project-img-1-desk-tab@2x-51ff9956.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="/portfolio-goit-project-js-101/assets/project-img-1-mobil-7c5020ea.jpg 1x, /portfolio-goit-project-js-101/assets/project-img-1-mobil@2x-25f24a32.jpg 2x" media="(max-width: 767px)" />
+              <img src="/portfolio-goit-project-js-101/assets/project-img-1-desk-tab-baa4ecee.jpg" alt="Project images" width="614" height="385" />
+            </picture>
+          </div>
+        </div>
+
+        <!-- ------- Slide 2 ------ -->
+        <div class="swiper-slide">
+          <div class="DiscriptProject">
+            <ul class="TechnologiesListProject">
+              <li>
+                <p class="TechnologiesText">#react</p>
+              </li>
+              <li>
+                <p class="TechnologiesText">#js</p>
+              </li>
+              <li>
+                <p class="TechnologiesText">#node js</p>
+              </li>
+              <li>
+                <p class="TechnologiesText">#git</p>
+              </li>
+            </ul>
+            <h2 class="ProjectName">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h2>
+            <a class="LinkGithubProject" href="https://github.com/AlexSerg01/portfolio-goit-project" target="_blank">See
+              project</a>
+          </div>
+          <div class="ProjectPictureContainer">
+            <picture>
+              <source srcset="/portfolio-goit-project-js-101/assets/project-img-2-desk-tab-b9206385.jpg 1x, /portfolio-goit-project-js-101/assets/project-img-2-desk-tab@2x-0b631796.jpg 2x" media="(min-width: 1439px)" />
+              <source srcset="/portfolio-goit-project-js-101/assets/project-img-2-desk-tab-b9206385.jpg 1x, /portfolio-goit-project-js-101/assets/project-img-2-desk-tab@2x-0b631796.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="/portfolio-goit-project-js-101/assets/project-img-2-mobil-764e6ce4.jpg 1x, /portfolio-goit-project-js-101/assets/project-img-2-mobil@2x-99c0b056.jpg 2x" media="(max-width: 767px)" />
+              <img src="/portfolio-goit-project-js-101/assets/project-img-2-desk-tab-b9206385.jpg" alt="Project images" width="614" height="385" />
+            </picture>
+          </div>
+        </div>
+
+        <!-- ------- Slide 3 ------ -->
+        <div class="swiper-slide">
+          <div class="DiscriptProject">
+            <ul class="TechnologiesListProject">
+              <li>
+                <p class="TechnologiesText">#react</p>
+              </li>
+              <li>
+                <p class="TechnologiesText">#js</p>
+              </li>
+              <li>
+                <p class="TechnologiesText">#node js</p>
+              </li>
+              <li>
+                <p class="TechnologiesText">#git</p>
+              </li>
+            </ul>
+            <h2 class="ProjectName">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h2>
+            <a class="LinkGithubProject" href="https://github.com/AlexSerg01/portfolio-goit-project" target="_blank">See
+              project</a>
+          </div>
+          <div class="ProjectPictureContainer">
+            <picture>
+              <source srcset="/portfolio-goit-project-js-101/assets/project-img-3-desk-tab-daf444ff.jpg 1x, /portfolio-goit-project-js-101/assets/project-img-3-desk-tab@2x-fa94235e.jpg 2x" media="(min-width: 1440px)" />
+              <source srcset="/portfolio-goit-project-js-101/assets/project-img-3-desk-tab-daf444ff.jpg 1x, /portfolio-goit-project-js-101/assets/project-img-3-desk-tab@2x-fa94235e.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="/portfolio-goit-project-js-101/assets/project-img-3-mobil-db5786de.jpg 1x, /portfolio-goit-project-js-101/assets/project-img-3-mobil@2x-3c3992da.jpg 2x" media="(max-width: 767px)" />
+              <img src="/portfolio-goit-project-js-101/assets/project-img-3-desk-tab-daf444ff.jpg" alt="Project images" width="614" height="385" />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="ArrowBox">
+        <div class="SwButtonPrev">
+          <svg class="IconArrowPrev" width="32" height="32">
+            <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </div>
+        <div class="SwButtonNext">
+          <svg class="IconArrowNext" width="32" height="32">
+            <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section id="FAQ" class="section faq">
+  <div class="faq-container">
+    <h2 class="title-faq" id="faq">FAQ</h2>
+
+    <ul class="faq-list accordion-container">
+      <li class="faq-item ac">
+        <div class="qwestions">
+          <h3 class="title-item-list ac-header">
+            What programming languages ​​are most often used in your project
+          </h3>
+          <button type="button" class="btn-answer ac-trigger">
+            <svg class="icon-answer">
+              <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="ac-panel">
+          <p class="text-item-list ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+
+      <li class="faq-item ac">
+        <div class="qwestions">
+          <h3 class="title-item-list ac-header">
+            What are the deadlines for the project
+          </h3>
+          <button type="button" class="btn-answer ac-trigger">
+            <svg class="icon-answer">
+              <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="ac-panel">
+          <p class="text-item-list ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+
+      <li class="faq-item ac">
+        <div class="qwestions">
+          <h3 class="title-item-list ac-header">
+            What payment methods do you accept?
+          </h3>
+          <button type="button" class="btn-answer ac-trigger">
+            <svg class="icon-answer">
+              <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="text-item-list ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+
+      <li class="faq-item ac">
+        <div class="qwestions">
+          <h3 class="title-item-list ac-header">How can I contact you</h3>
+          <button type="button" class="btn-answer ac-trigger">
+            <svg class="icon-answer">
+              <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="text-item-list ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+
+      <li class="faq-item ac">
+        <div class="qwestions">
+          <h3 class="title-item-list ac-header">
+            Do you provide advice or support
+          </h3>
+          <button type="button" class="btn-answer ac-trigger">
+            <svg class="icon-answer">
+              <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="text-item-list ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+
+      <li class="faq-item ac">
+        <div class="qwestions">
+          <h3 class="title-item-list ac-header">
+            What does the process of developing a software product look like
+            from idea to implementation
+          </h3>
+          <button type="button" class="btn-answer ac-trigger">
+            <svg class="icon-answer">
+              <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="text-item-list ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="CoversSection">
+  <h2 class="VisuallyHidden">Gallery of projects</h2>
+  <div class="CoverBgContainer">
+    <div class="CoversProjectContainer">
+      <ul class="CoversProjectList">
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-3-0a19c113.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-3@2x-3ba209bd.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-3-0a19c113.jpeg"
+                alt="Project 3"
+              />
+            </picture>
+          </div>
+        </li>
+      </ul>
+      <ul class="CoversProjectList">
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-7-03945316.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-7@2x-68c202b8.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-7-03945316.jpeg"
+                alt="Project 7"
+              />
+            </picture>
+          </div>
+        </li>
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-1-88e00488.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-1@2x-1c322d60.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-1-88e00488.jpeg"
+                alt="Project 1"
+              />
+            </picture>
+          </div>
+        </li>
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-2-54bbc7bd.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-2@2x-4001a082.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-2-54bbc7bd.jpeg"
+                alt="Project 2"
+              />
+            </picture>
+          </div>
+        </li>
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-7-03945316.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-7@2x-68c202b8.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-7-03945316.jpeg"
+                alt="Project 7"
+              />
+            </picture>
+          </div>
+        </li>
+      </ul>
+      <ul class="CoversProjectList">
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-4-e44f4118.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-4@2x-f0cd7667.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-4-e44f4118.jpeg"
+                alt="Project 4"
+              />
+            </picture>
+          </div>
+        </li>
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-5-c2db807e.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-5@2x-13dddb36.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-5-c2db807e.jpeg"
+                alt="Project 5"
+              />
+            </picture>
+          </div>
+        </li>
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-6-29d57c47.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-6@2x-9c9d7098.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-6-29d57c47.jpeg"
+                alt="Project 6"
+              />
+            </picture>
+          </div>
+        </li>
+      </ul>
+      <ul class="CoversProjectList">
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-2-54bbc7bd.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-2@2x-4001a082.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-2-54bbc7bd.jpeg"
+                alt="Project 2"
+              />
+            </picture>
+          </div>
+        </li>
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-2-54bbc7bd.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-2@2x-4001a082.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-2-54bbc7bd.jpeg"
+                alt="Project 2"
+              />
+            </picture>
+          </div>
+        </li>
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-9-28630029.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-9@2x-0d5c82e1.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-9-28630029.jpeg"
+                alt="Project 9"
+              />
+            </picture>
+          </div>
+        </li>
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-7-03945316.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-7@2x-68c202b8.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-7-03945316.jpeg"
+                alt="Project 7"
+              />
+            </picture>
+          </div>
+        </li>
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-8-de768b66.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-8@2x-1a0576f4.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-8-de768b66.jpeg"
+                alt="Project 8"
+              />
+            </picture>
+          </div>
+        </li>
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-4-e44f4118.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-4@2x-f0cd7667.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-4-e44f4118.jpeg"
+                alt="Project 4"
+              />
+            </picture>
+          </div>
+        </li>
+      </ul>
+      <ul class="CoversProjectList">
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-2-54bbc7bd.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-2@2x-4001a082.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-2-54bbc7bd.jpeg"
+                alt="Project 2"
+              />
+            </picture>
+          </div>
+        </li>
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-10-bb1eff1c.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-10@2x-804233c6.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-10-bb1eff1c.jpeg"
+                alt="Project 10"
+              />
+            </picture>
+          </div>
+        </li>
+        <li>
+          <div class="CoversImgContainer">
+            <picture class="CoversImg">
+              <source
+                srcset="/portfolio-goit-project-js-101/assets/covers-project-9-28630029.jpeg 1x, /portfolio-goit-project-js-101/assets/covers-project-9@2x-0d5c82e1.jpeg 2x"
+              />
+              <img
+                src="/portfolio-goit-project-js-101/assets/covers-project-9-28630029.jpeg"
+                alt="Project 9"
+              />
+            </picture>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="Section SectionReviews">
+  <div class="Container">
+    <h3 class="TitleText">REVIEWS</h3>
+
+    <!-- Swiper -->
+    <div class="reviews-swiper">
+      <div id="reviewsList" class="swiper-wrapper">
+        <!-- тут додані відгуки -->
+      </div>
+      <div class="ArrowNav">
+        <div class="ButtonPrev">
+          <svg class="SocialIconBack" width="32" height="32">
+            <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </div>
+
+        <div class="ButtonNext">
+          <svg class="SocialIconNext" width="32" height="32">
+            <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <div class="ModalMenu">
+  <button class="CloseModalBtn">
+    <svg class="IconCloseModal" width="32" height="32">
+      <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-close-x"></use>
+    </svg>
+  </button>
+  <div class="Menu">
+    <p class="MenuItem AboutMe">About me</p>
+    <p class="MenuItem Benefits">Benefits</p>
+    <p class="MenuItem Projects">Projects</p>
+    <p class="MenuItem FAQ">FAQ</p>
+    <button class="OrderButton">Order the project</button>
+  </div>
+</div>
+
+    </main>
+    <footer id="WorkTogether" class="WorkTogetherSection">
+  <div class="Container">
+    <picture class="WorkTogetherPhoto">
+      <source
+        srcset="data:image/png;base64,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 1x, /portfolio-goit-project-js-101/assets/photo@2x-a6de494b.png 2x"
+      />
+      <img src="data:image/png;base64,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" alt="photo of the person" />
+    </picture>
+    <h2 class="WorkTogetherTitle">
+      Let’s <span class="WorkWord">work </span
+      ><span class="NewLine">together</span>
+    </h2>
+    <form id="WtForm" class="CoopForm" autocomplete="off">
+      <ul class="CoopInputGroup">
+        <li class="CoopInputItem">
+          <input
+            class="CoopInput"
+            type="email"
+            name="email"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            placeholder="clients@gmail.com"
+            required
+          />
+          <p class="CoopResultMsg"></p>
+        </li>
+        <li class="CoopInputItem">
+          <input
+            class="CoopInput"
+            type="text"
+            name="comment"
+            pattern="[\S\s]+[\S]+"
+            placeholder="comments"
+            data-value
+            required
+          />
+        </li>
+      </ul>
+      <button class="CoopSubmitBtn" type="submit">Send</button>
+    </form>
+    <ul class="ContactsList">
+      <li class="ContactItem">
+        <a class="ContactLink" href="mailto:lloydjefferson@gmail.com">
+          lloydjefferson@gmail.com
+        </a>
+      </li>
+      <li class="ContactItem">
+        <a class="ContactLink" href="tel:+3801111111111">+380 11 1111 11 11</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+<div class="WorkTogetherModalWrapper">
+  <div class="Container WorkTogetherModalContainer">
+    <div class="WorkTogetherModal">
+      <button class="WorkTogetherModalClose" type="button">
+        <svg
+          class="WorkTogetherCloseIcon"
+          width="22"
+          height="22"
+          aria-label="close"
+        >
+          <use href="/portfolio-goit-project-js-101/assets/icons-ef1f10ff.svg#icon-close-x"></use>
+        </svg>
+      </button>
+      <ul class="WorkTogetherModalList">
+        <li class="WorkTogetherModalTitle">
+          <h2 id="WtModalRespTitle"></h2>
+        </li>
+        <li class="WorkTogetherModalText">
+          <p id="WtModalRespMessage"></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </body>
+</html>
