@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/portfolio-goit-project/",
+    "build": "vite build --base=/portfolio-goit-project-js-101/",
     "preview": "vite preview"
   },
   "devDependencies": {
